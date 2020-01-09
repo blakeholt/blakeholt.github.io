@@ -6,7 +6,7 @@ body {
     height: 100%;
     margin: 0;
     background-image: url(img/bg.jpg);
-    background-size: 1920px 1080px;
+    background-size: 100vw 100%;
 }
 
 /* Style the header with a grey background and some padding */
