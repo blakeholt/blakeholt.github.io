@@ -1,0 +1,62 @@
+.cell {
+    margin: 1px;
+    width: 3vw;
+    height: 3vw;
+    background-color: lightgray;
+    border: thin solid black;
+    float: left;
+    text-align: center;
+    color: red;
+    font-size: 3vw;
+}
+
+.row {
+    clear: both;
+}
+
+#grid {
+    float: left;
+    width: 60vw;
+}
+
+#controlPanel {
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    border: dashed green medium;
+    background-color: lightgreen;
+}
+
+#upButton {
+    width: 6vw;
+    height: 6vw;
+    margin-left: ;
+    margin-top: ;
+    float: ;
+}
+
+#leftButton {
+    width: 6vw;
+    height: 6vw;
+    clear: both;
+    margin-left: ;
+    float: left;
+}
+
+#rightButton {
+    width: 6vw;
+    height: 6vw;
+    margin-left: ;
+    float: left;
+}
+
+#downButton {
+    width: 6vw;
+    height: 6vw;
+    margin-left: ;
+    float: left;
+}
+
+button {
+    font-size: 2vw;
+}
