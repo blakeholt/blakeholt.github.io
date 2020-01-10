@@ -1,0 +1,172 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(3, 36, 0, 1) 0%, rgba(56, 121, 9, 1) 44%, rgba(51, 164, 56, 1) 63%, rgba(77, 117, 16, 1) 100%);
+    background-size: 100vw 1000%;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+    float: left;
+
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: left;
+}
+
+.header-left {
+    float: left;
+}
+
+
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    color: white;
+    text-align: center;
+
+    height: 54px;
+}
+
+#footer img:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#footer a {
+    height: 0px;
+    width: 0px;
+}
+
+#footer img {
+    width: 40px;
+    padding: 7px;
+}
+
+
+
+/* END OF HEADER CONTENT */
+
+
+.card {
+    -ms-overflow-style: none;
+    overflow: scroll;
+    color: white;
+    text-align: center;
+    float: left;
+
+    
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 20px;
+    border: solid thin black;
+
+    float: none;
+    width: 50vw;
+    height: 40vh;
+    margin: 2vh 25vw;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.card p,
+.card li {
+    text-align: left;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.card hr {
+    border: black thin solid;
+}
+
+#workspace {
+    height: 70vh;
+
+    height: 120vh;
+    margin-bottom: 54px;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media only screen and (min-width: 768px) {
+    .header a.logo {
+        float: left;
+        display: block;
+        text-align: center;
+    }
+
+    .header a {
+
+        margin-right: 0px;
+        float: left;
+        display: block;
+        text-align: center;
+    }
+
+    #workspace {
+        overflow: visible;
+        margin-bottom: 54px;
+        padding-bottom: 54px;
+    }
+
+    .header-right {
+        float: none;
+    }
+
+    .header-left {
+        float: none;
+    }
+
+    .card {
+        float: left;
+margin: 5vh calc(24vw/6);
+
+        width: 23.9vw;
+        height: 70vh;
+    }
+}
