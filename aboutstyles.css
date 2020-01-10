@@ -16,6 +16,7 @@ body {
 }
 
 /* Style the header links */
+
 .header a,
 #footer a {
     float: left;
@@ -98,6 +99,9 @@ body {
     float: left;
     padding: 7px;
 }
+
+
+
 
 /* END OF HEADER CONTENT */
 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7 by Blake Holt</title>
+    <script src="bus.js"></script>
+    <style>
+        #content {
+            width: 60%;
+            margin: 1%;
+            font-size: 1.25em;
+            line-height: 1.4em;
+        }
+
+        .input {
+            padding: 2% 2%;
+        }
+
+        .input:nth-child(odd) {
+            background-color: darkgray;
+        }
+
+        .input:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        .inputLabel {
+            width: 20%;
+            float: left;
+            font-family: sans-serif;
+        }
+
+        #buttons>* {
+            font-size: 1.5em;
+            width: 150px;
+            margin-top: 3%;
+            margin-right: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <h1>New Brunswick Bus Company</h1>
+        <h2>Ticket Purchase</h2>
+        <form>
+            <div class="input">
+                <input type="radio" name="passengerType" value="Adult" checked="checked">
+                <label>Adult</label>
+                <input type="radio" name="passengerType" value="Child">
+                <label>Child</label>
+                <input type="radio" name="passengerType" value="Senior">
+                <label>Senior</label>
+                <input type="radio" name="passengerType" value="Student">
+                <label>Student</label>
+            </div>
+            <div class="input">
+                <label>Going From </label>
+                <select id="goingFrom">
+                    <option>Bathurst</option>
+                    <option>Campbellton</option>
+                    <option>Edmunston</option>
+                    <option>Fredericton</option>
+                    <option>Miramichi</option>
+                    <option>Moncton</option>
+                    <option>Saint Andrews</option>
+                    <option>Saint John</option>
+                    <option>Saint Stephen</option>
+                    <option>Sussex</option>
+                    <option>Woodstock</option>
+                </select>
+                <label>Going to </label>
+                <select id="goingTo">
+                    <option>Bathurst</option>
+                    <option>Campbellton</option>
+                    <option>Edmunston</option>
+                    <option>Fredericton</option>
+                    <option>Miramichi</option>
+                    <option>Moncton</option>
+                    <option>Saint Andrews</option>
+                    <option>Saint John</option>
+                    <option>Saint Stephen</option>
+                    <option>Sussex</option>
+                    <option>Woodstock</option>
+                </select>
+            </div>
+            <div class="input">
+                <input type="radio" name="tripType" value="Return" checked="checked">
+                <label>Return</label>
+                <input type="radio" name="tripType" value="OneWay">
+                <label>One Way</label>
+            </div>
+            <div class="input">
+                <label>Departing</label>
+                <input type="date" id="departingDate" required>
+                <label>Returning</label>
+                <input type="date" id="returningDate" required>
+            </div>
+            <div class="input">
+                <div class="inputLabel">First Name</div>
+                <input type="text" id="firstName" required>
+            </div>
+            <div class="input">
+                <div class="inputLabel">Last Name</div>
+                <input type="text" id="lastName" required>
+            </div>
+            <div class="input">
+                <div class="inputLabel">Email</div>
+                <input type="email" id="email">
+            </div>
+            <div class="input">
+                <div class="inputLabel">Phone</div>
+                <input type="phonenumber" id="phone" placeholder="NNN-NNN-NNNN" pattern="\d\d\d-\d\d\d-\d\d\d\d">
+            </div>
+            <div class="input">
+                <div class="inputLabel">Bags</div>
+                <input type="number" id="bags" min="0" required>
+            </div>
+
+            <div id="buttons">
+                <input type="submit">
+                <input type="reset">
+            </div>
+
+        </form>
+
+    </div>
+</body></html>

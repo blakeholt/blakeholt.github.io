@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5 by Blake Holt</title>
+
+    <style>
+        h1 {
+            margin-left: 50px;
+        }
+
+        table,
+        th,
+        td {
+            border: thin solid grey;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        table {
+            margin-left: 50px;
+            text-align: center;
+        }
+
+
+        th {
+            background-color: midnightblue;
+            color: aliceblue;
+            font-weight: bold;
+            font-family: "Arial";
+        }
+
+        tr:last-child {
+            background-color: #ffff99;
+            font-weight: bold;
+        }
+
+        .LA {
+            text-align: left;
+        }
+
+        .SH {
+            color: black;
+            background-color: lightblue;
+        }
+
+        td:nth-last-child(-n+6) {
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Provinces and Territories of Canada</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Flag</th>
+            <th rowspan="2" class="LA">Province</th>
+            <th rowspan="2">Postal Abbreviation</th>
+            <th rowspan="2">Capital City</th>
+            <th rowspan="2">Largest City</th>
+            <th rowspan="2">Entered Confederation</th>
+            <th rowspan="2">Population</th>
+            <th colspan="3">Area (km&sup2;)</th>
+            <th colspan="2">Seats</th>
+        </tr>
+        <tr>
+            <th class="SH">Land</th>
+            <th class="SH">Water</th>
+            <th class="SH">Total</th>
+            <th class="SH">Commons</th>
+            <th class="SH">Senate</th>
+        </tr>
+        <tr>
+            <td><img src="images/Ontario.png" width=40px></td>
+            <td class="LA">Ontario</td>
+            <td>ON</td>
+            <td colspan="2">Toronto</td>
+            <td>July 1, 1867</td>
+            <td>13,448,494</td>
+            <td>917,741</td>
+            <td>158,654</td>
+            <td>1,076,395</td>
+            <td>121</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td><img src="images/Quebec.png" width=40px></td>
+            <td class="LA">Quebec</td>
+            <td>QC</td>
+            <td>Quebec City</td>
+            <td>Montreal</td>
+            <td>July 1, 1867</td>
+            <td>8,164,361</td>
+            <td>1,356,128</td>
+            <td>185,928</td>
+            <td>1,542,056</td>
+            <td>78</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td><img src="images/NovaScotia.png" width=40px></td>
+            <td class="LA">Nova Scotia</td>
+            <td>NS</td>
+            <td colspan="2">Halifax</td>
+            <td>July 1st, 1867</td>
+            <td>923,598</td>
+            <td>53,338</td>
+            <td>1,946</td>
+            <td>55,284</td>
+            <td>11</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><img src="images/NewBrunswick.png" width=40px></td>
+            <td class="LA">New Brunswick</td>
+            <td>NB</td>
+            <td>Fredericton</td>
+            <td>Moncton</td>
+            <td>July 1st, 1867</td>
+            <td>747,101</td>
+            <td>71,450</td>
+            <td>1,458</td>
+            <td>72,908</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><img src="images/Manitoba.png" width=40px></td>
+            <td class="LA">Manitoba</td>
+            <td>MB</td>
+            <td colspan="2">Winnipeg</td>
+            <td>July 15, 1870</td>
+            <td>1,278,365</td>
+            <td>553,556</td>
+            <td>94,241</td>
+            <td>647,797</td>
+            <td>14</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><img src="images/NorthwestTerritories.png" width=40px></td>
+            <td class="LA">Northwest Territories</td>
+            <td>NT</td>
+            <td colspan="2">Yelloknife</td>
+            <td>July 15, 1870</td>
+            <td>41,786</td>
+            <td>1,183,085</td>
+            <td>163,021</td>
+            <td>1,346,106</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><img src="images/BritishColumbia.png" width=40px></td>
+            <td class="LA">British Columbia</td>
+            <td>BC</td>
+            <td>Victoria</td>
+            <td>Vancouver</td>
+            <td>July 20, 1871</td>
+            <td>4,648,055</td>
+            <td>925,186</td>
+            <td>19,549</td>
+            <td>944,735</td>
+            <td>42</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><img src="images/PrinceEdwardIsland.png" width=40px></td>
+            <td class="LA">Prince Edward Island</td>
+            <td>PE</td>
+            <td colspan="2">Charlottetown </td>
+            <td>July 1, 1873</td>
+            <td>142,907</td>
+            <td>5,660</td>
+            <td>0</td>
+            <td>5,660</td>
+            <td>4</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><img src="images/Yukon.png" width=40px></td>
+            <td class="LA">Yukon</td>
+            <td>YT</td>
+            <td colspan="2">Whitehorse</td>
+            <td>June 13, 1893</td>
+            <td>35,874</td>
+            <td>474,391</td>
+            <td>8,052</td>
+            <td>482,443</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><img src="images/Alberta.png" width=40px></td>
+            <td class="LA">Alberta</td>
+            <td>AB</td>
+            <td>Edmonton</td>
+            <td>Calgary</td>
+            <td>September 1, 1905</td>
+            <td>4,067,175</td>
+            <td>642,317</td>
+            <td>19,531</td>
+            <td>661,848</td>
+            <td>34</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><img src="images/Saskatchewan.png" width=40px></td>
+            <td class="LA">Saskatchewan</td>
+            <td>SK</td>
+            <td>Regina</td>
+            <td>Saskatoon</td>
+            <td>September 1, 1905</td>
+            <td>1,098,352</td>
+            <td>591.670</td>
+            <td>59,366</td>
+            <td>651,036</td>
+            <td>14</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><img src="images/NewfoundlandAndLabrador.png" width=40px></td>
+            <td class="LA">Newfoundland and Labrador</td>
+            <td>NL</td>
+            <td colspan="2">St. John's</td>
+            <td>March 31 1949</td>
+            <td>519,716</td>
+            <td>373,872</td>
+            <td>31,340</td>
+            <td>405,212</td>
+            <td>7</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><img src="images/Nunavut.png" width=40px></td>
+            <td class="LA">Nunavut</td>
+            <td>NU</td>
+            <td colspan="2">Iqialuit</td>
+            <td>April 1, 1999</td>
+            <td>35,944</td>
+            <td>1,936,113</td>
+            <td>157,077</td>
+            <td>2,093,190</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td colspan="6">Totals</td>
+            <td>35,151,728</td>
+            <td>9,084,507</td>
+            <td>900,163</td>
+            <td>9,984,670</td>
+            <td>338</td>
+            <td>105</td>
+        </tr>
+    </table>
+
+</body>

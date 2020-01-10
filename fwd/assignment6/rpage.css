@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-image: url(Images/background.jpg);
+	background-size: cover;
+	background-image: no-repeat;
+}
+
+/* Header */
+#Header {
+    color: white;
+    font-size: 24px;
+    padding: 1%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.footer {
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+/* Sidebar */
+#Sidebar {
+    float: left;
+    width: 15%;
+}
+
+#workspace {
+    width: 85%;
+    float: right;
+}
+
+.SidebarContent {
+    text-decoration: none;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+
+}
+
+.SidebarContent:hover,
+#active {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+#left {
+    color: white;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#center {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 33.33%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#right {
+    color: white;
+    text-align: center;
+    float: right;
+    width: 33.37%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Card CSS */
+.CardL {
+    border-radius: 20px;
+    width: 30%;
+    height: 400px;
+    float: left;
+    border: solid thin black;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.20);
+    margin-left: 15%;
+}
+
+.CardR {
+    border-radius: 20px;
+    width: 30%;
+    height: 400px;
+    float: left;
+    border: solid thin black;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.20);
+    float: right;
+    margin-right: 15%;
+    margin-bottom: 7%
+}
+
+
+#title {
+    align-self: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+#title p {
+
+
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: thin black solid;
+
+    color: white;
+}
+
+.Info {
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+#PageImage {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+#PageImage img{
+    width: 60%;
+}
+
+.CardR p {
+    text-align: center;
+    border-bottom: solid 1.2px black;
+    padding-bottom: 10px;
+}
+
+.CardL P {
+    text-align: center;
+    border-bottom: solid 1.2px black;
+    padding-bottom: 10px;
+}

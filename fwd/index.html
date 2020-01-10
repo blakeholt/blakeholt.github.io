@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HoltsWebsites</title>
+
+    <link rel="stylesheet" href="mainstyles.css">
+    <link rel="stylesheet" href="schedule.css">
+    <script>
+        function toggleSchedule() {
+            var x = document.getElementById("schedulespace");
+            var y = document.getElementById("click");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.textContent = "Toggle Off";
+            } else {
+                x.style.display = "none";
+                y.textContent = "Toggle On";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="Header">
+    </div>
+    <div class="navbar">
+        <a href="../index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">WEB DESIGN<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="assignment1/index.html">Assignment 1</a>
+                <a href="assignment2/assignment2.pdf">Assignment 2</a>
+                <a href="assignment3/index.html">Assignment 3</a>
+                <a href="assignment4/index.html">Assignment 4</a>
+                <a href="assignment5/index.html">Assignment 5</a>
+                <a href="assignment6/index.html">Assignment 6</a>
+                <a href="assignment7/index.html">Assignment 7</a>
+                <a href="final/index.html">Final Project</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">PROJECTS<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="">DB Challenge</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SAUCE PHONE<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="saucephone.html">Live Feed</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">SCHEDULE<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <p id="click" onclick="toggleSchedule()">Toggle On</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="workspace">
+        <div id="schedulespace" style="display: none;">
+            <table class="TableCSS">
+
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+
+
+                <tr>
+                    <th>8:30 - 9:20</th>
+                    <td id="PROG1311B" rowspan="2">PROG1311B: Object Oriented Programming, Cathy</td>
+                    <td id="MULT1170">MULT1170: Responsive Web Design, Steve</td>
+                    <td id="PROG1311B" rowspan="2">PROG1311B: Object Oriented Programming, Cathy</td>
+                    <td rowspan="2" id="MATH1183">MATH1183: Computer Math and Stats, Cathy</td>
+                    <td rowspan="2" id="DATA1024">DATA1024: Introduction to SQL, Cathy</td>
+                </tr>
+                <tr>
+                    <th>9:30 - 10:20</th>
+                    <td id="PROG1128">PROG1128: Javascript Programming, Steve</td>
+                </tr>
+                <tr>
+                    <th>10:30 - 11:20</th>
+                    <td id="MULT1170" rowspan="2">MULT1170: Responsive Web Design, Steve</td>
+                    <td id="MATH1183">MATH1183: Computer Math and Stats, Cathy</td>
+                    <td id="SYST107" rowspan="2">SYST107: Object Oriented Analysis & Design, Chris</td>
+                    <td id="SYST107" rowspan="2">SYST107: Object Oriented Analysis & Design, Chris</td>
+                    <td id="PROG1311B" rowspan="2">PROG1311B: Object Oriented Programming, Cathy</td>
+                </tr>
+                <tr>
+                    <th>11:30 - 12:20</th>
+                    <td id="Tutorial">Tutorial</td>
+                </tr>
+                <tr>
+                    <th>12:30 - 1:20</th>
+                    <td colspan=5 id="">Lunch</td>
+                </tr>
+                <tr>
+                    <th>1:30 - 2:20</th>
+                    <td id="SYST107" rowspan="2">SYST107: Object Oriented Analysis & Design, Chris</td>
+                    <td id="PROJ1029">PROJ1029: Project Management, AJ</td>
+                    <td rowspan="2" id="DATA1028">DATA1028: Database Design, Cathy</td>
+                    <td rowspan="2" id="PROJ1029">PROJ1029: Project Management, AJ</td>
+                    <td rowspan="2" id="PROG1128">PROG1128: Javascript Programming, Steve</td>
+                </tr>
+                <tr>
+                    <th>2:30 - 3:20</th>
+                    <td rowspan="2" id="DATA1024">DATA1024: Introduction to SQL, Cathy</td>
+
+                </tr>
+                <tr>
+                    <th>3:30 - 4:20</th>
+                    <td id=""></td>
+                    <td colspan=3 id=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span id="left">
+            <p>http://holts.website/</p>
+        </span>
+        <span id="center">
+            <p>You are visiting on
+                <script>
+                    document.write(new Date().toLocaleDateString());
+
+                </script>
+            </p>
+        </span>
+        <span id="right">
+            <p>Made using HTML and CSS.</p>
+        </span>
+    </div>
+    
+</body>

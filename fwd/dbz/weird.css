@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+    background-image: url(img/bg.jpg);
+    background-size: 1920px 1080px;
+}
+
+#header {
+    width: 100%;
+    background-color: rgba(255, 111, 0, .7);
+}
+
+#header h1 {
+    font-family: monospace;
+    letter-spacing: 5px;
+
+    padding-bottom: .5%;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+#header:first-child {
+    padding-top: 2%;
+}
+
+#header:nth-child(1) {
+    padding-bottom: 2%;
+}
+
+#content {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 50px;
+    background-color: rgba(255, 111, 0, .7);
+}
+
+#content h1 {
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#types {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    height: 32px;
+}
+
+
+#teq {
+    color: green;
+}
+
+#str {
+    color: red;
+}
+
+#int {
+    color: purple;
+}
+
+#phy {
+    color: darkorange;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#button {
+    margin: 2%;
+    width: 15%;
+    font-size: 150%;
+}
+
+/* Hide the browser's default checkbox */
+#types input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Customize the label (the container) */
+.agl {
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.aglcheckmark {
+    margin-right: 5%;
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(img/agloff.png);
+    background-size: 32px 32px;
+}
+
+/* When the checkbox is checked */
+.agl input:checked ~ .aglcheckmark {
+    background-image: url(img/agl.png);
+    background-size: 32px 32px;
+}
+
+/* Customize the label (the container) */
+.teq {
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.teqcheckmark {
+    margin-right: 5%;
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(img/teqoff.png);
+    background-size: 32px 32px;
+}
+
+/* When the checkbox is checked */
+.teq input:checked ~ .teqcheckmark {
+    background-image: url(img/teq.png);
+    background-size: 32px 32px;
+}
+
+
+
+
+/* Customize the label (the container) */
+.int {
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.intcheckmark {
+    margin-right: 5%;
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(img/intoff.png);
+    background-size: 32px 32px;
+}
+
+/* When the checkbox is checked */
+.int input:checked ~ .intcheckmark {
+    background-image: url(img/int.png);
+    background-size: 32px 32px;
+}
+
+
+
+
+
+/* Customize the label (the container) */
+.str {
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.strcheckmark {
+    margin-right: 5%;
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(img/stroff.png);
+    background-size: 32px 32px;
+}
+
+/* When the checkbox is checked */
+.str input:checked ~ .strcheckmark {
+    background-image: url(img/str.png);
+    background-size: 32px 32px;
+}
+
+
+
+
+
+/* Customize the label (the container) */
+.phy {
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.phycheckmark {
+    float: left;
+    height: 32px;
+    width: 32px;
+    background-image: url(img/phyoff.png);
+    background-size: 32px 32px;
+}
+
+/* When the checkbox is checked */
+.phy input:checked ~ .phycheckmark {
+    background-image: url(img/phy.png);
+    background-size: 32px 32px;
+}
