@@ -1,0 +1,11 @@
+{
+   "Blake": [
+       {
+           "firstName": "Blake",
+           "lastName": "Holt",
+           "job": "Programmer",
+           "about": "Greetings, my name is Blake Holt. I am from the Saint John region of Southern New Brunswick, and I am 20 years old. I completed two years of my Bachelor of Science in Computer Science at the University of New Brunswick, Saint John Campus, before moving to the New Brunswick Community College to study in the Information Technology: Programmer Analyist program. Throughout my three years of schooling I have learned a good deal about the workings of computers, and programming computers. I believe that I am most profiecient in programming using the Java programming language.",
+           "languages": ["C#","C","Java","Python","HTML","CSS", "JavaScript"]
+       }
+   ]
+}

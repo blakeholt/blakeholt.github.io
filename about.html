@@ -5,6 +5,31 @@
     <title>Holt-Tech About Page</title>
     <meta charset="utf-8">
     <link href="aboutstyles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script>
+        $(function() {
+            
+            
+            // Thank you https://stackoverflow.com/questions/12070631/how-to-use-json-file-in-html-code
+
+            $.getJSON("json/about.json", function(data) {
+                $.each(data.Blake, function(i, f) {
+                    
+                    var aboutme = "<p>" + f.about + "</p>";
+                    $(aboutme).appendTo("#abtme");
+                    
+                    
+                    for (x in f.languages) {
+                        var tblRow = "<li>" + f.languages[x] + "</li>";
+                        $(tblRow).appendTo("#languages");
+                    }
+                });
+
+            });
+
+        });
+
+    </script>
 </head>
 
 <body>
@@ -26,18 +51,16 @@
         <div class="infocard">
             <h1>About me</h1>
             <hr>
-
+            <div id="abtme"></div>
         </div>
         <div class="typecard">
-            <h1>languages</h1>
+            <div class="cardtop">
+                <h1>languages</h1>
+            </div>
             <hr>
-            <ul>
-                <li>C#</li>
-                <li>C</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>CSS</li>
+
+
+            <ul id="languages">
             </ul>
         </div>
     </div>
@@ -50,4 +73,6 @@
             <img alt="Github Logo" src="img/gh.png">
         </a>
     </div>
-</body></html>
+</body>
+
+</html>
