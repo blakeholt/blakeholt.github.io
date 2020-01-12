@@ -107,14 +107,18 @@ body {
     background-color: rgba(0, 0, 0, .6);
     border-radius: 20px;
     border: solid thin black;
+
 }
 
 .piccard::-webkit-scrollbar,
-.typecard::-webkit-scrollbar {
+.typecard::-webkit-scrollbar,
+.infocard::-webkit-scrollbar {
     display: none;
 }
 
 .infocard {
+    -ms-overflow-style: none;
+    overflow: scroll;
     float: right;
     width: 20vw;
     height: 80vh;
@@ -171,14 +175,31 @@ li {
     -webkit-text-stroke: .5px white;
 }
 
-#workspace p,
+#workspace p {
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 2px 3px 3px #292929;
+    letter-spacing: 2px;
+    color: white;
+    -webkit-text-stroke: .5px white;
+    margin: 20px;
+}
+
 #workspace li {
     font-family: 'Titillium Web', sans-serif;
     text-shadow: 2px 3px 3px #292929;
     letter-spacing: 2px;
     color: white;
     -webkit-text-stroke: .5px white;
-    margin: 20px
+}
+
+@media only screen and (max-width: 1300px) {
+    ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        text-align: left;
+        list-style: square;
+    }
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
