@@ -8,9 +8,10 @@
     <meta charset="utf-8">
     <link href="HeaderStyles.css" rel="stylesheet" type="text/css">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js"></script>
 </head>
 
-<body>
+<body onload="startTime(); checkDate()">
 
     <div class="header">
         <a href="index.html" class="logo hvr-sweep-to-bottom">Holt-Tech</a>
@@ -24,27 +25,25 @@
 
     </div>
     <div id="workspace">
+
+        <a href="photo.html">
+            <div class="card hvr-grow">
+                <h1>Photography</h1>
+                <hr>
+            </div>
+        </a>
         <div class="card">
-            <h1>French Revolution</h1>
-            <hr>
-            <p>The French Revolution was a period of far-reaching social and political upheaval in France and its colonies beginning in 1789. The Revolution overthrew the monarchy, established a republic, catalyzed violent periods of political turmoil, and finally culminated in a dictatorship under Napoleon who brought many of its principles to areas he conquered in Western Europe and beyond. Inspired by liberal and radical ideas, the Revolution profoundly altered the course of modern history, triggering the global decline of absolute monarchies while replacing them with republics and liberal democracies. Through the Revolutionary Wars, it unleashed a wave of global conflicts that extended from the Caribbean to the Middle East. Historians widely regard the Revolution as one of the most important events in human history.</p>
-            <hr>
-            <p>Source: I wrote this.</p>
+            <h1>You are accessing this website on: </h1>
+            <h1 id="date"></h1>
+            <h1>The current local time is: </h1>
+            <h1 id="time"></h1>
         </div>
-        <div class="card">
-            <h1>Welcome to my website</h1>
-            <hr>
-            <h2>Rules</h2>
-            <ol>
-            <li>No plagiarism.</li>
-            <li>There are no rules.</li>
-            <li>Rule #3.</li>
-            </ol>
-        </div>
-        <div class="card">
-            <h1>To be used later</h1>
-            <hr>
-        </div>
+        <a href="contact.html">
+            <div class="card hvr-grow">
+                <h1>Looking for a programmer?</h1>
+                <hr>
+            </div>
+        </a>
     </div>
 
 
@@ -55,6 +54,4 @@
             <img alt="Github Logo" src="img/gh.png">
         </a>
     </div>
-</body>
-
-</html>
+</body></html>
