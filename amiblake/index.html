@@ -8,10 +8,8 @@
     <style>
         h1 {
             font-size: 500px;
-            margin: 50vh 75% 0px 0px;
-        }
-
-        h1 {
+            padding-top: 40vh;
+            margin: 0;
             font-family: 'Titillium Web', sans-serif;
             text-shadow: 2px 3px 3px #292929;
             letter-spacing: 2px;
@@ -25,14 +23,25 @@
             background-image: url(../img/bg.jpg);
             background-size: 100vw 100vh;
         }
-
     </style>
+    <script>
+        function genNum() {
+            var h = document.createElement("h1");
+            var t = document.createTextNode("Error");
+            var num = Math.floor((Math.random() * 100) + 1);
+
+            if (num < 89) {
+                t = document.createTextNode("No");
+            } else if (num < 100) {
+                t = document.createTextNode("Yes");
+            } else {
+                t = document.createTextNode("Maybe");
+            }
+            h.appendChild(t);
+            document.body.appendChild(h);
+        }
+    </script>
 </head>
 
-<body>
-
-    <h1>No</h1>
-
-</body>
-
-</html>
+<body onload="genNum()">
+</body></html>
