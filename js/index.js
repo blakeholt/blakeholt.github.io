@@ -76,7 +76,7 @@ function checkDate() {
        day += "December ";
     }
     
-    day += (D+1);
+    day += (D);
     
     if(day.endsWith("1") && !day.endsWith("11")){
        day += "st";
