@@ -2,81 +2,109 @@
 <html>
 
 <head>
-    
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Holt-Tech About Page</title>
-    <meta charset="utf-8">
+    <title>Holt-Tech</title>
     <link rel="icon" href="img/icon.ico">
-    <link href="HeaderStyles.css" rel="stylesheet" type="text/css">
-    <link href="aboutstyles.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-    <script>
-        $(function() {
-            
-            
-            // Thank you https://stackoverflow.com/questions/12070631/how-to-use-json-file-in-html-code
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-            $.getJSON("json/about.json", function(data) {
-                $.each(data.Blake, function(i, f) {
-                    
-                    var aboutme = "<p>" + f.about + "</p>";
-                    $(aboutme).appendTo("#abtme");
-                    
-                    
-                    for (x in f.languages) {
-                        var tblRow = "<li>" + f.languages[x] + "</li>";
-                        $(tblRow).appendTo("#languages");
-                    }
-                });
-
-            });
-
-        });
-
-    </script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="js/index.js"></script>
 </head>
 
-<body>
-    
-    <div class="header">
-        <a href="index.html" class="logo hvr-sweep-to-bottom">Holt-Tech</a>
-        <div class="header-right">
-            <a class="hvr-sweep-to-bottom" href="index.html">Home</a>
-            <a class="hvr-sweep-to-bottom" href="contact.html">Contact</a>
-            <a href="about.html" class="active">About</a>
-            <a class="hvr-sweep-to-bottom" href="webdesign.html">Web Design</a>
-        </div>
+<body onload="checkDate()">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img class="_ghimg" src="img/icon.ico" width="30" height="30" alt="" style="margin-right: 10px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Return to the home page">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="View information about me.">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my school projects.">
+                  <a class="nav-link disabled" href="school.html">School</a>
+              </li>
+              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Contact me.">
+                  <a class="nav-link disabled" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my projects.">
+                  <a class="nav-link disabled" href="projects.html">Projects</a>
+              </li>
+          </ul>
+          <span class="navbar-text d-md-block d-none" id="date">
+          </span>
+      </div>
+  </nav>
 
 
-    </div>
-    <div id="workspace">
-        <div class="piccard pic">
-        </div>
-        <div class="infocard">
-            <h1>About me</h1>
-            <hr>
-            <div id="abtme"></div>
-        </div>
-        <div class="typecard">
-            <div class="cardtop">
-                <h1>languages</h1>
+    <div class="container-fluid top">
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                      <div class="row mt-5">
+                          <div class="col-md-1"></div>
+                          <div class="col-md-4">
+                            <div class="card bg-dark">
+                              <img class="card-img-top" src="img\me2.jpg" alt="Card image">
+                              <div class="card-body text-light">
+                                <h4 class="card-title text-center">Blake Holt</h4>
+                                Languages:
+                                <ul id="languages">
+                                  <li>C#</li>
+                                  <li>C</li>
+                                  <li>Java</li>
+                                  <li>Python</li>
+                                  <li>HTML</li>
+                                  <li>CSS</li>
+                                  <li>JavaScript</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-1"></div>
+                          <div class="col-md-5"><div class="card bg-dark">
+                            <div class="card-body text-light">
+                              <h4 class="card-title text-center">About Me:</h4>
+                              <p>Greetings, my name is Blake Holt. I am from the Saint John region of Southern New Brunswick, and I am 20 years old.</p>
+                              <br>
+                              <p>I completed two years of my Bachelor of Science in Computer Science at the University of New Brunswick, Saint John Campus, before moving to the New Brunswick Community College to study in the Information Technology: Programmer Analyist program. </p>
+                              <br>
+                              <p>Throughout my three years of schooling I have learned a good deal about the workings of computers, and programming computers. I believe that I am most profiecient in programming using the Java programming language.</p>
+                            </div>
+                          </div></div>
+                          <div class="col-md-1"></div>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <hr>
-
-
-            <ul id="languages">
-            </ul>
+            <div class="col-md-1"></div>
         </div>
+
+        <nav class="navbar navbar-expand navbar-dark fixed-bottom justify-content-center bg-dark">
+            <a href="https://github.com/blakeholt" data-toggle="tooltip" data-placement="top" title="Visit this websites GitHub Repository">
+                <img class="_ghimg" alt="Github Logo" src="img/gh.png">
+            </a>
+        </nav>
+
+        <script>
+            $(function() {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+
+
     </div>
-
-
-
-
-    <div id="footer">
-        <a href="https://github.com/blakeholt">
-            <img alt="Github Logo" src="img/gh.png">
-        </a>
-    </div>
-</body>
-
-</html>
+</body></html>

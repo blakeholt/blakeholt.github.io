@@ -1,0 +1,50 @@
+._bg {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background-image: url(../img/bg.jpg);
+    background-size: 100vw 100vh;
+}
+
+._ghimg {
+    height: 30px;
+    opacity: 0.5;
+}
+._ghimg:hover{
+    opacity: 1;
+}
+
+._link {
+    text-decoration: none;
+    color: white;
+}
+
+._oop {transition: all .1s ease; background-color: skyblue;}
+._js {transition: all .1s ease; background-color: coral;}
+._ooad {transition: all .1s ease; background-color: goldenrod;}
+._math {transition: all .1s ease; background-color: dimgray;}
+._sql {transition: all .1s ease; background-color: darkolivegreen;}
+._proj {transition: all .1s ease; background-color: mediumpurple;
+}
+._oop:hover,
+._js:hover,
+._ooad:hover,
+._math:hover,
+._sql:hover,
+._proj:hover {
+    background-color: lightgray;
+    color: dimgray;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+p {
+    margin: auto;
+}
+
+.top{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}

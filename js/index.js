@@ -1,5 +1,7 @@
 // Thanks W3 Schools
+var day;
 
+/*var time;
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -7,7 +9,6 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    var time;
     if (h > 12) {
         time = (h - 12) + ":" + m + ":" + s + " PM";
     } else {
@@ -24,7 +25,7 @@ function checkTime(i) {
         i = "0" + i;
     }
     return i;
-}
+}*/
 
 function checkDate() {
     var td = new Date();
@@ -33,7 +34,6 @@ function checkDate() {
     var D = td.getDate();
     var d = td.getDay();
     
-    var day;
     if(d == 0){
        day = "Sunday, ";
     }else if(d == 1){
@@ -89,3 +89,24 @@ function checkDate() {
     }
     document.getElementById('date').innerHTML = day;
 }
+
+function updateText(id) {
+                "use strict";
+                var display, page = document;
+
+                if (id === "oop") {
+                    display = "Object Oriented Programming: Cathy Burchill";
+                } else if (id === "js") {
+                    display = "Javascript Programming: Steve Monk";
+                } else if (id === "ooad") {
+                    display = "Object Oriented Analysis and Design: Chris London";
+                } else if (id === "math") {
+                    display = "Computer Math and Statistics: Cathy Burchill";
+                } else if (id === "sql") {
+                    display = "Introduction to SQL: Cathy Burchill";
+                } else if (id === "proj") {
+                    display = "Project Management: AJ Arsenault";
+                } 
+
+                page.getElementById('info').innerHTML = display;
+            }

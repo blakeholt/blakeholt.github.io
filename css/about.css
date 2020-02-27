@@ -1,0 +1,17 @@
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: left;
+    list-style: square;
+}
+
+@media only screen and (max-width: 1300px) {
+    ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        text-align: left;
+        list-style: square;
+    }
+}
