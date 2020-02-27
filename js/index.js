@@ -16,7 +16,7 @@ function startTime() {
     }
 
     document.getElementById('time').innerHTML = time;
-    
+
     var t = setTimeout(startTime, 500);
 }
 
@@ -33,7 +33,7 @@ function checkDate() {
     var m = td.getMonth();
     var D = td.getDate();
     var d = td.getDay();
-    
+
     if(d == 0){
        day = "Sunday, ";
     }else if(d == 1){
@@ -49,7 +49,7 @@ function checkDate() {
     }else if(d == 6){
        day = "Saturday, ";
     }
-    
+
     if(m == 0){
        day += "January ";
     }else if(m == 1){
@@ -75,9 +75,9 @@ function checkDate() {
     }else if(m == 11){
        day += "December ";
     }
-    
+
     day += (D);
-    
+
     if(day.endsWith("1") && !day.endsWith("11")){
        day += "st";
     }else if(day.endsWith("2")){
@@ -91,9 +91,6 @@ function checkDate() {
 }
 
 function updateText(id) {
-                "use strict";
-                var display, page = document;
-
                 if (id === "oop") {
                     display = "Object Oriented Programming: Cathy Burchill";
                 } else if (id === "js") {
@@ -106,7 +103,7 @@ function updateText(id) {
                     display = "Introduction to SQL: Cathy Burchill";
                 } else if (id === "proj") {
                     display = "Project Management: AJ Arsenault";
-                } 
+                }
 
-                page.getElementById('info').innerHTML = display;
+                document.querySelector("#info").innerHTML = display;
             }
