@@ -3,92 +3,103 @@
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Holt-Tech</title>
+    <title>About | Holt-Tech</title>
     <link rel="icon" href="img/icon.ico">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    <script src="https://javascript.holt-tech.systems/Blake/QRClass.js"></script>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/about.css">
+    <script src="js/toggleid.js"></script>
     <script src="js/index.js"></script>
+    <style>
+        #meimg img {
+            height: 90%;
+        }
+        #languages{
+            column-count: 2;
+            column-fill: auto;
+        }
+    </style>
 </head>
 
-<body onload="checkDate()">
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">
-        <img class="_ghimg" src="img/icon.ico" width="30" height="30" alt="" style="margin-right: 10px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Return to the home page">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="View information about me.">
-                  <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my school projects.">
-                  <a class="nav-link" href="school.html">School</a>
-              </li>
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Contact me.">
-                  <a class="nav-link disabled" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my projects.">
-                  <a class="nav-link disabled" href="projects.html">Projects</a>
-              </li>
-          </ul>
-          <span class="navbar-text d-md-block d-none" id="date">
-          </span>
-      </div>
-  </nav>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img class="_ghimg" src="img/icon.ico" width="30" height="30" alt="" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="Toggle<br>Dark/Light<br>mode." data-html="true" id="_Toggle">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Return to the home page.">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="View information about me.">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my school projects.">
+                    <a class="nav-link" href="school.html">School</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="(Under Maintenance)<br>Reach me at<br>blakeholt@blakeholt.net" data-html="true">
+                    <a class="nav-link disabled" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="(Under Maintenance)<br>View my Projects." data-html="true">
+                    <a class="nav-link disabled" href="projects.html">Projects</a>
+                </li>
+            </ul>
+            <span class="navbar-text d-md-block d-none" id="date">
+            </span>
+        </div>
+    </nav>
 
 
     <div class="container-fluid top">
         <div class="row mt-5">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <div class="card bg-dark">
+                <div class="card" style="background-color: rgba(0,0,0,0.5);">
                     <div class="card-body">
-                      <div class="row my-3">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-4">
-                          <div class="card bg-dark">
-                            <img class="card-img-top" src="img\me2.JPG" alt="Card image">
-                          </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                          <div class="card text-light bg-dark">
-                            <div class="card p-2 bg-dark">
-                              <h4 class="card-title text-center">Blake Holt</h4>
-                              Languages:
-                              <ul id="languages">
-                                <li>C#</li>
-                                <li>C</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                              </ul>
+                        <div class="row my-3">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                <div class="card text-light bg-dark">
+                                    <div class="card p-2 bg-dark">
+                                        <h4 class="card-title text-center">Blake Holt</h4>
+                                        Qualifications:
+                                        <ul id="languages">
+                                            <li>C#</li>
+                                            <li>C</li>
+                                            <li>Java</li>
+                                            <li>Python</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card p-2 bg-dark">
+                                        <h4 class="card-title text-center">About Me:</h4>
+                                        <p>Greetings, and welcome to my website. My name is Blake Holt. I am from the Southern region of New Brunswick. I have been programming for roughly 5 years now, starting as a hobby in highschool and moving onto my field of education as of 2017.</p>
+                                        <br>
+                                        <p>I completed two years of my Bachelor of Science in Computer Science at the University of New Brunswick, Saint John Campus, before moving to the New Brunswick Community College to study in the Information Technology: Programmer Analyist program. </p>
+                                        <br>
+                                        <p>Throughout my three years of education in the technology field, I have taken courses related to the building, programming, and reparing of computers. Learned how to set up and use Databases using OracleSQL, and MySQL. I can produce code in the langauges specified on this page, and I have created applications using the Agile Software Development Model.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card p-2 bg-dark">
-                              <h4 class="card-title text-center">About Me:</h4>
-                              <p>Greetings, and welcome to my website. My name is Blake Holt. I am from the Southern region of New Brunswick. I have been programming for roughly 5 years now, starting as a hobby in highschool and moving onto my field of education as of 2017.</p>
-                              <br>
-                              <p>I completed two years of my Bachelor of Science in Computer Science at the University of New Brunswick, Saint John Campus, before moving to the New Brunswick Community College to study in the Information Technology: Programmer Analyist program. </p>
-                              <br>
-                              <p>Throughout my three years of education in the technology field I have taken courses related to the building, programming, and reparing of computers. Learned how to set up and use Databases using Oracle DMBS, produce code in the langauges specified on this page, created applications using the Agile Software Development Model.</p>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4">
+                                <div class="card bg-dark" id="meimg">
+                                    <img class="card-img-top" src="img\me_a.png" alt="Card image" id="meimg">
+                                </div>
                             </div>
-                          </div>
+                            <div class="col-md-1"></div>
+                            
                         </div>
-                        <div class="col-md-1"></div>
-                      </div>
                     </div>
                 </div>
             </div>
@@ -96,17 +107,10 @@
         </div>
 
         <nav class="navbar navbar-expand navbar-dark fixed-bottom justify-content-center bg-dark">
-            <a href="https://github.com/blakeholt" data-toggle="tooltip" data-placement="top" title="Visit this websites GitHub Repository">
-                <img class="_ghimg" alt="Github Logo" src="img/gh.png">
+            <a href="https://github.com/blakeholt" data-toggle="tooltip" data-placement="top" title="Visit my GitHub Repository.">
+                <img class="_ghimg" alt="Github Logo" src="img/gh.png" id="_ghimg">
             </a>
         </nav>
-
-        <script>
-            $(function() {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
-
-
     </div>
 </body></html>
+

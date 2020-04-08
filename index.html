@@ -3,30 +3,30 @@
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Holt-Tech</title>
+    <title>Home | Holt-Tech</title>
     <link rel="icon" href="img/icon.ico">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    <script src="https://javascript.holt-tech.systems/Blake/QRClass.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/toggleid.js"></script>
     <script src="js/index.js"></script>
-
 </head>
 
-<body onload="checkDate()">
+<body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="index.html">
-          <img class="_ghimg" src="img/icon.ico" width="30" height="30" alt="" style="margin-right: 10px;">
+        <a class="navbar-brand" href="#">
+            <img class="_ghimg" src="img/icon.ico" width="30" height="30" alt="" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="Toggle<br>Dark/Light<br>mode." data-html="true" id="_Toggle">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="Return to the home page">
+                <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="Return to the home page.">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View information about me.">
@@ -35,10 +35,10 @@
                 <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my school projects.">
                     <a class="nav-link" href="school.html">School</a>
                 </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Contact me.">
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="(Under Maintenance)<br>Reach me at<br>blakeholt@blakeholt.net" data-html="true">
                     <a class="nav-link disabled" href="contact.html">Contact</a>
                 </li>
-                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my projects.">
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="(Under Maintenance)<br>View my Projects." data-html="true">
                     <a class="nav-link disabled" href="projects.html">Projects</a>
                 </li>
             </ul>
@@ -49,152 +49,36 @@
 
 
     <div class="container-fluid top">
-      <div class="row mt-5">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-              <div class="card bg-dark">
-                  <div class="card-title m-0 text-center text-light">
-                    <h1 class="pt-1 m-0">Welcome to Holt Technologies</h1>
-                  </div>
-                  <div class="card-body m-0 text-light text-center">
-                    <p>Please enjoy visiting our website.</p>
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="card bg-dark text-center text-light">
+                    <h1 class="m-0">Welcome to Holt Technologies</h1>
+                    <h2 class="m-0">This site is currently under construction.</h2>
+                    <br>
+                    <p>Please enjoy our website.</p>
                     <p>Website domain purchased via Name.com, hosted via GitHub, created January 2020.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-1"></div>
-      </div>
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
         <div class="row mt-5">
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
-                <div class="card bg-dark d-none d-sm-block">
-                    <div class="card-body">
-                        <table class="table table-bordered text-light text-center">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="">Schedule</th>
-                                    <th scope="col">Monday</th>
-                                    <th scope="col">Tuesday</th>
-                                    <th scope="col">Wednesday</th>
-                                    <th scope="col">Thursday</th>
-                                    <th scope="col">Friday</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">8:30 - 9:20</th>
-                                    <td rowspan="2" class="_oop" id="oop" onclick="updateText(this.id);">
-                                        <p>PROG1311B</p>
-                                    </td>
-                                    <td rowspan="2" class="_js" id="js" onclick="updateText(this.id);">
-                                        <p>PROG1128</p>
-                                    </td>
-                                    <td rowspan="2" class="_oop" id="oop" onclick="updateText(this.id);">
-                                        <p>PROG1311B</p>
-                                    </td>
-                                    <td rowspan="2" class="_math" id="math" onclick="updateText(this.id);">
-                                        <p>MATH1183</p>
-                                    </td>
-                                    <td rowspan="2" class="_sql" id="sql" onclick="updateText(this.id);">
-                                        <p>DATA1024</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">9:30 - 10:20</th>
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                </tr>
-                                <tr>
-                                    <th scope="row">10:30 - 11:20</th>
-                                    <td rowspan="2" class="_js" id="js" onclick="updateText(this.id);">
-                                        <p>PROG1128</p>
-                                    </td>
-                                    <td class="_math" id="math" onclick="updateText(this.id);">
-                                        <p>MATH1183</p>
-                                    </td>
-                                    <td rowspan="2" class="_ooad" id="ooad" onclick="updateText(this.id);">
-                                        <p>SYST1107</p>
-                                    </td>
-                                    <td rowspan="2" class="_ooad" id="ooad" onclick="updateText(this.id);">
-                                        <p>SYST1107</p>
-                                    </td>
-                                    <td rowspan="2" class="_oop" id="oop" onclick="updateText(this.id);">
-                                        <p>PROG1311B</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">11:30 - 12:20</th>
-                                    <!--<td></td>-->
-                                    <td></td>
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                </tr>
-                                <tr>
-                                    <th scope="row">12:30 - 1:20</th>
-                                    <td colspan="5">Lunch</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1:30 - 2:20</th>
-                                    <td rowspan="2" class="_ooad" id="ooad" onclick="updateText(this.id);">
-                                        <p>SYST1107</p>
-                                    </td>
-                                    <td class="_proj" id="proj" onclick="updateText(this.id);">
-                                        <p>PROJ1029</p>
-                                    </td>
-                                    <td rowspan="2" class="_sql" id="sql" onclick="updateText(this.id);">
-                                        <p>DATA1024</p>
-                                    </td>
-                                    <td rowspan="2" class="_proj" id="proj" onclick="updateText(this.id);">
-                                        <p>PROJ1029</p>
-                                    </td>
-                                    <td rowspan="2" class="_js" id="js" onclick="updateText(this.id);">
-                                        <p>PROG1128</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2:30 - 3:20</th>
-                                    <!--<td></td>-->
-                                    <td rowspan="2" class="_sql" id="sql" onclick="updateText(this.id);">
-                                        <p>DATA1024</p>
-                                    </td>
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="">3:30 - 4:20</th>
-                                    <td></td>
-                                    <!--<td></td>-->
-                                    <td colspan="3"></td>
-                                    <!--<td></td>-->
-                                    <!--<td></td>-->
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p id="info" class="text-light m-0 text-center"></p>
-                    </div>
-                </div>
+                <div id="content_here">
 
+                </div>
             </div>
             <div class="col-lg-1"></div>
         </div>
 
         <nav class="navbar navbar-expand navbar-dark fixed-bottom justify-content-center bg-dark">
-            <a href="https://github.com/blakeholt" data-toggle="tooltip" data-placement="top" title="Visit this websites GitHub Repository">
-                <img class="_ghimg" alt="Github Logo" src="img/gh.png">
+            <a href="https://github.com/blakeholt" data-toggle="tooltip" data-placement="top" title="Visit my GitHub Repository.">
+                <img class="_ghimg" alt="Github Logo" src="img/gh.png" id="_ghimg">
             </a>
         </nav>
-
-        <script>
-            $(function() {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
-
-
     </div>
-</body></html>
+</body>
+
+</html>

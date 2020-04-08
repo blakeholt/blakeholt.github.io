@@ -3,70 +3,119 @@
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Holt-Tech</title>
+    <title>School | Holt-Tech</title>
     <link rel="icon" href="img/icon.ico">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    <script src="https://javascript.holt-tech.systems/Blake/QRClass.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/toggleid.js"></script>
     <script src="js/index.js"></script>
+    <style>
+        #click_card, #click_card img{
+            transition: all .2s ease-in-out;
+            
+        }
+        #click_card:hover img{
+            filter: brightness(100%);
+            
+        }
+        #click_card img{
+            filter: brightness(50%);
+        }
+        #click_card:hover{
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            padding-top: 15vw;
+            text-align: center;
+            font-size: 4vw;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 2.00px;
+        }
 
+        @media only screen and (max-width: 765px) {
+            h1 {
+                padding-top: 30vw;
+                font-size: 10vw;
+            }
+        }
+    </style>
 </head>
 
-<body onload="checkDate()">
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="index.html">
-        <img class="_ghimg" src="img/icon.ico" width="30" height="30" alt="" style="margin-right: 10px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Return to the home page">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View information about me.">
-                  <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="View my school projects.">
-                  <a class="nav-link" href="school.html">School</a>
-              </li>
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Contact me.">
-                  <a class="nav-link disabled" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View my projects.">
-                  <a class="nav-link disabled" href="projects.html">Projects</a>
-              </li>
-          </ul>
-          <span class="navbar-text d-md-block d-none" id="date">
-          </span>
-      </div>
-  </nav>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img class="_ghimg" src="img/icon.ico" width="30" height="30" alt="" style="margin-right: 10px;" data-toggle="tooltip" data-placement="bottom" title="Toggle<br>Dark/Light<br>mode." data-html="true" id="_Toggle">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Return to the home page.">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="View information about me.">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="View my school projects.">
+                    <a class="nav-link" href="school.html">School</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="(Under Maintenance)<br>Reach me at<br>blakeholt@blakeholt.net" data-html="true">
+                    <a class="nav-link disabled" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="(Under Maintenance)<br>View my Projects." data-html="true">
+                    <a class="nav-link disabled" href="projects.html">Projects</a>
+                </li>
+            </ul>
+            <span class="navbar-text d-md-block d-none" id="date">
+            </span>
+        </div>
+    </nav>
 
 
     <div class="container-fluid top">
         <div class="row mt-5">
             <div class="col-lg-1"></div>
-            <div class="col-lg-10"></div>
+            <div class="col-lg-10">
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 mt-4">
+                        <div class="card bg-dark" id="click_card">
+                            <img class="card-img" src="img/marks.png" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h1 class="card-title">Marks</h1>
+                            </div>
+                            <a href="school/marks.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-4">
+                        <div class="card bg-dark" id="click_card">
+                            <img class="card-img" src="img/assignments.png" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h1 class="card-title">Assignments</h1>
+                            </div>
+                            <a href="school/assignments.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+
+            </div>
             <div class="col-lg-1"></div>
         </div>
 
         <nav class="navbar navbar-expand navbar-dark fixed-bottom justify-content-center bg-dark">
-            <a href="https://github.com/blakeholt" data-toggle="tooltip" data-placement="top" title="Visit this websites GitHub Repository">
-                <img class="_ghimg" alt="Github Logo" src="img/gh.png">
+            <a href="https://github.com/blakeholt" data-toggle="tooltip" data-placement="top" title="Visit my GitHub Repository.">
+                <img class="_ghimg" alt="Github Logo" src="img/gh.png" id="_ghimg">
             </a>
         </nav>
-
-        <script>
-            $(function() {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
-
-
     </div>
 </body></html>
