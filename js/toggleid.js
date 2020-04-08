@@ -23,11 +23,11 @@ function _ToggleIt() {
     });
     if (mode === "dark") {
         getID("_Toggle").src = "img/Logo-Light.png";
-        getID("_ghimg").src = "img/GH2.png";
+        getID("_ghimg").src = "img/gh2.png";
         mode = "light";
     } else {
         getID("_Toggle").src = "img/Logo-Dark.png";
-        getID("_ghimg").src = "img/GH.png";
+        getID("_ghimg").src = "img/gh.png";
         mode = "dark";
     }
 }
