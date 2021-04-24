@@ -1,5 +1,5 @@
 window.onload = () => {
-    document.getElementById("clickme").addEventListener("click", () => speak('Get fucked Connor'));
+    document.getElementById("clickme").addEventListener("click", () => speak('Fuck you.'));
 }
 
 function speak(message) {
