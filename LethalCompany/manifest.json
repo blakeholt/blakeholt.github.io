@@ -1,42 +1,54 @@
 [
     {
         "path": "Cars1shboom.mp3",
-        "checksum": "10e8695699f0576d2b7c703920effa2a"
+        "checksum": "48ae5dd521af702de162354fca453eba"
     },
     {
         "path": "DancingQueen.mp3",
-        "checksum": "7d0586416cb9c6d3297b04168c851577"
+        "checksum": "c5f0c336fa5f9dd21a185f624adeb469"
+    },
+    {
+        "path": "fellas.mp3",
+        "checksum": "d7248cf93d9ab40935a4cb7d80708460"
     },
     {
         "path": "FreeBird.mp3",
-        "checksum": "e2622b4380641db6ade92b4011d600b3"
+        "checksum": "c5277711da9fdd1d983a7d6104790007"
     },
     {
         "path": "GangstasParadise.mp3",
-        "checksum": "08e0926df23e337f532287bc5b83e68d"
+        "checksum": "8fc32f2224fb8b10bf11452053a7dbdf"
     },
     {
         "path": "HeaveAway.mp3",
-        "checksum": "2d4561c5a375c0a56ae3628142b017ae"
+        "checksum": "3f4b52a6c76d7cd1c49885dae92d5815"
+    },
+    {
+        "path": "HexGirls.mp3",
+        "checksum": "d9c760f5ccdd98a1a29f4ed08d697d8f"
     },
     {
         "path": "HeyBaby.mp3",
-        "checksum": "9cad3a8a0c1227a63db5179d4427ccac"
+        "checksum": "db7d873d738d83e813478180bd092561"
     },
     {
         "path": "MyShinyTeethAndMe.mp3",
-        "checksum": "7c3255a496db919133f503238704c5ba"
+        "checksum": "74bd24fcfac2f97fd4cc951c122f9b51"
+    },
+    {
+        "path": "peepoo.mp3",
+        "checksum": "53507da49c829421adaec50e780bc7ce"
     },
     {
         "path": "RippedPants.mp3",
-        "checksum": "451994e9085cdac834aab767ec12664d"
+        "checksum": "e539ae453127505d76658b1eb6b20e9a"
     },
     {
         "path": "SpiralMountain.mp3",
-        "checksum": "b56c37c62343da53463ab0fc84c23708"
+        "checksum": "8eb69d4d6e8905d6af9c03b95027b528"
     },
     {
         "path": "WhatsNewScoobyDoo.mp3",
-        "checksum": "590ca5cefac3af8869b6d63cf8816a8f"
+        "checksum": "aeb0a27b843966a48731b3a21cf11184"
     }
 ]
